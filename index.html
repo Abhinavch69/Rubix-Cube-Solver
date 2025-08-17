@@ -8,11 +8,12 @@
 </head>
 <body>
   <h2>Solve the Rubix cube</h2>
-  <video id="webCam" autoplay></video><br>
-  <button id="capture">Capture</button>
-  <button id="solve">Solve</button>
-  <button id="reset">Reset</button>
-  <div id="solution"></div>
+<video id="video" autoplay playsinline></video>
+<canvas id="canvas" style="display:none;"></canvas>
+<button id="capture">Capture Face</button>
+<button id="recapture" disabled>Recapture</button>
+
+<div id="faces"></div>
   <script src="app.js"></script>
 </body>
 </html>
