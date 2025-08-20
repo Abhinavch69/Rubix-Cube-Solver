@@ -65,3 +65,15 @@ button:hover:enabled {
   height: 90px;
   object-fit: cover;
 }
+
+#instruction {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #222;   /* dark background */
+  color: #fff;              /* default text color (white) */
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
