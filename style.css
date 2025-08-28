@@ -49,6 +49,15 @@ button:hover:enabled {
   background-color: #45a049;
 }
 
+/* ✅ Special styling for the Process button */
+#process {
+  background-color: #2196F3;   /* Blue to stand out */
+}
+
+#process:hover:enabled {
+  background-color: #1976D2;   /* Darker blue on hover */
+}
+
 /* Captured faces preview */
 #faces {
   margin-top: 20px;
