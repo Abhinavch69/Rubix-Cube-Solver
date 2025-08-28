@@ -3,6 +3,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const facesDiv = document.getElementById('faces');
 const instructionDiv = document.getElementById('instruction'); // now from HTML
+const processBtn = document.getElementById('process'); // ✅ process button reference
 
 let capturedFaces = [];
 let currentFaceIndex = -1; // track which face we’re on
@@ -25,6 +26,7 @@ function updateInstruction() {
       `👉 Please show the <span style="color:${face.color.toLowerCase()}">${face.color}</span> face (${face.name})`;
   } else {
     instructionDiv.innerHTML = "✅ All 6 faces captured! You can process the cube now.";
+    processBtn.disabled = false; // ✅ enable process button
   }
 }
 
